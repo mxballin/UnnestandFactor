@@ -6,49 +6,67 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of stat545b2 is to …
+The goal of this package is to help you to tidy dataframes where
+variables have nested values.
 
 ## Installation
 
-You can install the released version of stat545b2 from
-[CRAN](https://CRAN.R-project.org) with:
+You can install the latest version of the package by loading (after
+installing if you do not already have it) the package devtools and
+running the following command in R:
 
 ``` r
-install.packages("stat545b2")
+#devtools::install_github("stat545ubc-2021/ballinstat545b2", ref = "0.1.0")
 ```
-
-## Example
-
-This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(stat545b2)
-## basic example code
+devtools::install()
+#> 
+#>      checking for file ‘/Users/mxballin/Documents/GitHub/ballinstat545b2/DESCRIPTION’ ...  ✓  checking for file ‘/Users/mxballin/Documents/GitHub/ballinstat545b2/DESCRIPTION’
+#>   ─  preparing ‘ballinstat545b2’:
+#>      checking DESCRIPTION meta-information ...  ✓  checking DESCRIPTION meta-information
+#>   ─  checking for LF line-endings in source and make files and shell scripts
+#>   ─  checking for empty or unneeded directories
+#>    Omitted ‘LazyData’ from DESCRIPTION
+#>   ─  building ‘ballinstat545b2_0.1.0.tar.gz’
+#>      
+#> Running /Library/Frameworks/R.framework/Resources/bin/R CMD INSTALL \
+#>   /var/folders/hb/0wv8x91n6_q2vc4w8_92vztr0000gn/T//Rtmp3vApil/ballinstat545b2_0.1.0.tar.gz \
+#>   --install-tests 
+#> * installing to library ‘/Library/Frameworks/R.framework/Versions/4.1/Resources/library’
+#> * installing *source* package ‘ballinstat545b2’ ...
+#> ** using staged installation
+#> ** R
+#> ** tests
+#> ** byte-compile and prepare package for lazy loading
+#> ** help
+#> *** installing help indices
+#> *** copying figures
+#> ** building package indices
+#> ** testing if installed package can be loaded from temporary location
+#> ** testing if installed package can be loaded from final location
+#> ** testing if installed package keeps a record of temporary installation path
+#> * DONE (ballinstat545b2)
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+## Help with using the function
+
+This package only contains one function, `unnest_and_factor`. For more
+information on how to use this function and to see examples of how it
+can be used with examples utilizing datasets from the `datateachr`
+package, after installing the package, run the following commands in R:
 
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+suppressPackageStartupMessages(library(ballinstat545b2))
+?unnest_and_factor
 ```
 
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this. You could also
-use GitHub Actions to re-render `README.Rmd` every time you push. An
-example workflow can be found here:
-<https://github.com/r-lib/actions/tree/master/examples>.
+If you would like to run the examples, you will need to make sure that
+you have installed the `datateachr` package. You can then run the
+following command in R along with one of the command lines provided in
+the examples section of the help page:
 
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+``` r
+#load the datateachr package
+suppressPackageStartupMessages(library(datateachr))
+```

@@ -10,12 +10,13 @@
 #'
 #' @import dplyr tidyr
 #' @import rlang
+#' @import datateachr
 #'
 #' @return The function returns the unnested tibble.
 #' @export
-#' @examples \dontrun{ unnest_and_factor(steam_games, game_details,",")
-#' unnest_and_factor(apt_buildings, parking_type, ",")
-#' unnest_and_factor(apt_buildings, bike_parking, " and ")}
+#' @examples \dontrun{ unnest_and_factor(datateachr::steam_games, game_details,",")
+#' unnest_and_factor(datateachr::apt_buildings, parking_type, ",")
+#' unnest_and_factor(datateachr::apt_buildings, bike_parking, " and ")}
 #'
 #' @references
 #' Syntax suggested on StackOverflow by LyzandeR
