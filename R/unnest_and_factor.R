@@ -8,10 +8,9 @@
 #' @param var The target variable from that tibble - called 'var' as short for variable
 #' @param sep The separator string that the function should use to identify nested values; include quotations for proper usage - called 'sep' to mirror dplyr language
 #'
-#'@return The function returns the unnested tibble.
-#'
-#'@examples
-#' unnest_and_factor(steam_games, game_details,",")
+#' @return The function returns the unnested tibble.
+#' @export
+#' @examples unnest_and_factor(steam_games, game_details,",")
 #' unnest_and_factor(apt_buildings, parking_type, ",")
 #' unnest_and_factor(apt_buildings, bike_parking, " and ")
 #'
