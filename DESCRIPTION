@@ -4,8 +4,8 @@ Version: 0.1.0
 Authors@R: 
     person("Mya", "Ballin", , "mya.ballin@ubc.ca", role = c("aut", "cre"))
 Description: This package helps you to tidy dataframes where variables have nested values.
-License: use_mit_license()
-Imports: dplyr, datateachr, rlang
+License:use_mit_license(copyright_holder = "Mya Ballin")
+Imports: dplyr, tidyr, rlang
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
