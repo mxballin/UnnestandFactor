@@ -5,7 +5,7 @@ Authors@R:
     person("Mya", "Ballin", , "mya.ballin@ubc.ca", role = c("aut", "cre"))
 Description: This package helps you to tidy dataframes where variables have nested values.
 License: MIT + file LICENSE
-Imports: dplyr, tidyr, rlang
+Imports: dplyr, tidyr, rlang, datateachr
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)

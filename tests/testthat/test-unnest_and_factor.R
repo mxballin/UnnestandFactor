@@ -46,4 +46,4 @@ rm(function_facilities, unnested_facilities)
 #testing that evaluating the `id` variable of `steam_games` would generate a warning.
 #evaluating the `id` column in `steam_games`
 
-testthat::test_that("warning", testthat::expect_warning(unnest_and_factor(datateachr::steam_games, id, ",")))
+testthat::test_that("warning", {testthat::expect_warning(unnest_and_factor(datateachr::steam_games, id, ","))})
