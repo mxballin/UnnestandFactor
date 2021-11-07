@@ -10,7 +10,6 @@
 #'
 #' @import dplyr tidyr
 #' @import rlang
-#' @import datateachr
 #'
 #' @return The function returns the unnested tibble.
 #' @export

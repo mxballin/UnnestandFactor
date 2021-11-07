@@ -22,9 +22,9 @@ the data by making sure that if there are multiple values included in a single o
 separator, these values are unnested--separated--and then factored for sorting, counting, and other grouping purposes.
 }
 \examples{
-\dontrun{ unnest_and_factor(steam_games, game_details,",")
-unnest_and_factor(apt_buildings, parking_type, ",")
-unnest_and_factor(apt_buildings, bike_parking, " and ")}
+\dontrun{ unnest_and_factor(datateachr::steam_games, game_details,",")
+unnest_and_factor(datateachr::apt_buildings, parking_type, ",")
+unnest_and_factor(datateachr::apt_buildings, bike_parking, " and ")}
 
 }
 \references{
