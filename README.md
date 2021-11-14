@@ -16,7 +16,7 @@ installing if you do not already have it) the package devtools and
 running the following command in R:
 
 ``` r
-#devtools::install_github("stat545ubc-2021/ballinstat545b2", ref = "0.1.0")
+devtools::install_github("stat545ubc-2021/ballinstat545b2", ref = "v0.1.0")
 ```
 
 ## Help with using the function

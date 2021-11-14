@@ -24,8 +24,8 @@ The goal of this package is to help you to tidy dataframes where variables have 
 
 You can install the latest version of the package by loading (after installing if you do not already have it) the package devtools and running the following command in R:
 
-``` {r}
-#devtools::install_github("stat545ubc-2021/ballinstat545b2", ref = "0.1.0")
+``` {r eval=FALSE}
+devtools::install_github("stat545ubc-2021/ballinstat545b2", ref = "v0.1.0")
 ```
 
 ## Help with using the function
