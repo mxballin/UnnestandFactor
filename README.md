@@ -11,9 +11,8 @@ variables have nested values.
 
 ## Installation
 
-You can install the latest version of the package by loading (after
-installing if you do not already have it) the package devtools and
-running the following command in R:
+You can install the latest version of the package by running the
+following command in R (you will need to have the pacakge ‘devtools’):
 
 ``` r
 devtools::install_github("stat545ubc-2021/ballinstat545b2", ref = "v0.1.0")
@@ -31,21 +30,22 @@ suppressPackageStartupMessages(library(ballinstat545b2))
 ?unnest_and_factor
 ```
 
-If you would like to run the examples, you will need to make sure that
-you have installed the `datateachr` package. You can then run the
-following command in R along with one of the command lines provided in
-the examples section of the help page:
+If you would like to run the examples that are in the help document, you
+will need to make sure that you have installed the `datateachr` package.
+You can then run the following command in R along with one of the
+command lines provided in the examples section of the help page:
 
 ``` r
 #load the datateachr package
 suppressPackageStartupMessages(library(datateachr))
 ```
 
-Here is an example of what that would look like:
+Here is an example of what the code you would want to run would look
+like:
 
 ``` r
 #load the datateachr package
 suppressPackageStartupMessages(library(datateachr))
 #execute one of the examples
-unnest_and_factor(apt_buildings, parking_type, ",")
+ballinstat545b2::unnest_and_factor(apt_buildings, parking_type, ",")
 ```
